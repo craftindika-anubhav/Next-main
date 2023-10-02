@@ -19,16 +19,93 @@ const berlin = localFont({
   variable: '--tg-berlin-font-family',
 });
 
-const poppins = Poppins({
-  weight: ['400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
+// const poppins = Poppins({
+//   weight: ['400', '500', '600', '700', '800', '900'],
+//   subsets: ['latin'],
+//   variable: '--tg-body-font-family',
+// });
+
+const poppins = localFont({
+  src: [
+    {
+      path: '../../public/assets/fonts/Poppins-Light.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Poppins-Regular.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Poppins-Medium.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Poppins-SemiBold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Poppins-Bold.ttf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Poppins-Black.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
   variable: '--tg-body-font-family',
 });
 
-const barlow = Barlow({
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  variable: '--tg-heading-font-family',
+// const barlow = Barlow({
+//   weight: ['300', '400', '500', '600', '700', '800', '900'],
+//   subsets: ['latin'],
+//   variable: '--tg-heading-font-family',
+// });
+
+const barlow = localFont({
+  src: [
+    {
+      path: '../../public/assets/fonts/Barlow-ExtraLight.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Barlow-Light.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Barlow-Regular.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Barlow-Medium.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Barlow-SemiBold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Barlow-Bold.ttf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../../public/assets/fonts/Barlow-Black.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+  variable: '--tg-body-font-family',
 });
 
 export const metadata: Metadata = {
