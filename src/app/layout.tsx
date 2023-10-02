@@ -1,7 +1,6 @@
 import './globals.scss';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import { Poppins, Barlow } from 'next/font/google';
 
 const berlin = localFont({
   src: [
@@ -18,12 +17,6 @@ const berlin = localFont({
   ],
   variable: '--tg-berlin-font-family',
 });
-
-// const poppins = Poppins({
-//   weight: ['400', '500', '600', '700', '800', '900'],
-//   subsets: ['latin'],
-//   variable: '--tg-body-font-family',
-// });
 
 const poppins = localFont({
   src: [
@@ -60,12 +53,6 @@ const poppins = localFont({
   ],
   variable: '--tg-body-font-family',
 });
-
-// const barlow = Barlow({
-//   weight: ['300', '400', '500', '600', '700', '800', '900'],
-//   subsets: ['latin'],
-//   variable: '--tg-heading-font-family',
-// });
 
 const barlow = localFont({
   src: [
