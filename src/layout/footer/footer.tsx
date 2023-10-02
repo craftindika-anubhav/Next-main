@@ -9,11 +9,7 @@ import icon_4 from '@/assets/img/icons/social_icon04.png';
 import payment from '@/assets/img/others/payment_card.png';
 
 const Footer = () => {
-  return (
-    <footer className="footer-style-one">
-     
-    </footer>
-  );
+  return <footer className="footer-style-one"></footer>;
 };
 
 export default Footer;

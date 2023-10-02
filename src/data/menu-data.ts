@@ -4,54 +4,54 @@ type IMenuDataType = {
   title: string;
   link: string;
   sub_menu?: {
-      title: string;
-      link: string;
+    title: string;
+    link: string;
   }[];
 }
 
-const menu_data:IMenuDataType[] = [
+const menu_data: IMenuDataType[] = [
   {
-    id:1,
-    title:'Home',
-    link:'/',
+    id: 1,
+    title: 'Home',
+    link: '/',
     // sub_menu:[
-      // {title:'Home One',link:'/'},
-      // {title:'Home Two',link:'/home-2'},
+    // {title:'Home One',link:'/'},
+    // {title:'Home Two',link:'/home-2'},
     // ]
   },
   {
-    id:2,
-    title:'ABOUT US',
-    link:'/#aboutSec',
+    id: 2,
+    title: 'ABOUT US',
+    link: '/#aboutSec',
     // sub_menu:[
-      // {title:'Home One',link:'/'},
-      // {title:'Home Two',link:'/home-2'},
+    // {title:'Home One',link:'/'},
+    // {title:'Home Two',link:'/home-2'},
     // ]
   },
   {
-    id:3,
-    title:'FEATURES',
-    link:'/#experienceArea',
+    id: 3,
+    title: 'FEATURES',
+    link: '/#experienceArea',
   },
   {
-    id:10,
-    title:'MARKETPLACE',
-    link:'/shop'
+    id: 10,
+    title: 'MARKETPLACE',
+    link: '/marketplace'
   },
   {
-    id:4,
-    title:'TOKENOMICS',
-    link:'/#TOKENOMICSArea'
+    id: 4,
+    title: 'TOKENOMICS',
+    link: '/#TOKENOMICSArea'
   },
   {
-    id:6,
-    title:'ROADMAP',
-    link:'/#roadmap',
+    id: 6,
+    title: 'ROADMAP',
+    link: '/#roadmap',
   },
   {
-    id:5,
-    title:'VOICES',
-    link:'/#topvoices'
+    id: 5,
+    title: 'VOICES',
+    link: '/#topvoices'
   },
   // {
   //   id:4,
@@ -75,9 +75,9 @@ const menu_data:IMenuDataType[] = [
   //   ]
   // },
   {
-    id:7,
-    title:'CONTACT US',
-    link:'/#contactus',
+    id: 7,
+    title: 'CONTACT US',
+    link: '/#contactus',
   }
   // 
 ]

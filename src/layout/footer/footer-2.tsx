@@ -1,5 +1,5 @@
-'use client'
-import React,{useEffect} from 'react';
+'use client';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/assets/img/logo/Vocalify 02 (1).png';
@@ -7,30 +7,33 @@ import logo from '@/assets/img/logo/Vocalify 02 (1).png';
 const FooterTwo = () => {
   useEffect(() => {
     if (!!window.IntersectionObserver) {
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active-footer");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, {
-        rootMargin: "0px 0px -100px 0px"
-      });
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active-footer');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          rootMargin: '0px 0px -100px 0px',
+        }
+      );
 
-      document.querySelectorAll('.has-footer-animation').forEach(block => {
+      document.querySelectorAll('.has-footer-animation').forEach((block) => {
         observer.observe(block);
       });
     } else {
-      document.querySelectorAll('.has-footer-animation').forEach(block => {
+      document.querySelectorAll('.has-footer-animation').forEach((block) => {
         block.classList.remove('has-footer-animation');
       });
     }
   }, []);
   return (
     <footer className="footer-style-two has-footer-animation">
-        <div className="footer__country">
-            {/* <div className="container custom-container">
+      <div className="footer__country">
+        {/* <div className="container custom-container">
                 <div className="row">
                     <div className="col-6">
                         <div className="footer__country-name">
@@ -44,11 +47,11 @@ const FooterTwo = () => {
                     </div>
                 </div>
             </div> */}
-        </div>
-        <div className="footer__two-widgets">
-            <div className="container custom-container">
-                <div  className="row">
-                    {/* <div className="col-md-4 col-sm-7 order-1 order-md-0">
+      </div>
+      <div className="footer__two-widgets">
+        <div className="container custom-container">
+          <div className="row">
+            {/* <div className="col-md-4 col-sm-7 order-1 order-md-0">
                         <div className="footer-el-widget">
                             <h4 className="title">information</h4>
                             <ul className="list-wrap">
@@ -58,28 +61,47 @@ const FooterTwo = () => {
                             </ul>
                         </div>
                     </div> */}
-                    <div style={{margin: "auto"}} className="col-md-4 col-sm-5 order-0 order-md-2">
-                        <div className="footer-el-widget text-start text-md-center widget_nav_menu">
-                            <div className="footer-el-logo mb-35">
-                                <Link href="/">
-                                  <Image src={logo} alt="Mykd" style={{height:'auto'}}/>
-                                </Link>
-                            </div>
-                            <div className="footer-el-menu">
-                                <ul className="list-wrap">
-                                    <li><Link href="/">Home</Link></li>
-                                    <li><Link href="/#aboutSec">About Us</Link></li>
-                                    <li><Link href="/shop">MARTKETPLACE</Link></li>
-                                    <li><Link href="#experienceArea">FEATURES</Link></li>
-                                    <li><Link href="#TOKENOMICSArea">TOKENOMIC</Link></li>
-                                    <li><Link href="#topvoices">VOICES</Link></li>
-                                    <li><Link href="#roadmap">ROADMAP</Link></li>
-                                    <li><Link href="#contactus">CONTACT US</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className="col-md-4 col-sm-7 order-3">
+            <div
+              style={{ margin: 'auto' }}
+              className="col-md-4 col-sm-5 order-0 order-md-2"
+            >
+              <div className="footer-el-widget text-start text-md-center widget_nav_menu">
+                <div className="footer-el-logo mb-35">
+                  <Link href="/">
+                    <Image src={logo} alt="Mykd" style={{ height: 'auto' }} />
+                  </Link>
+                </div>
+                <div className="footer-el-menu">
+                  <ul className="list-wrap">
+                    <li>
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                      <Link href="/#aboutSec">About Us</Link>
+                    </li>
+                    <li>
+                      <Link href="/marketplace">MARTKETPLACE</Link>
+                    </li>
+                    <li>
+                      <Link href="#experienceArea">FEATURES</Link>
+                    </li>
+                    <li>
+                      <Link href="#TOKENOMICSArea">TOKENOMICS</Link>
+                    </li>
+                    <li>
+                      <Link href="#topvoices">VOICES</Link>
+                    </li>
+                    <li>
+                      <Link href="#roadmap">ROADMAP</Link>
+                    </li>
+                    <li>
+                      <Link href="#contactus">CONTACT US</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-md-4 col-sm-7 order-3">
                         <div className="footer-el-widget text-start text-md-end">
                             <h4 className="title">head office</h4>
                             <ul className="list-wrap">
@@ -88,21 +110,28 @@ const FooterTwo = () => {
                                 <li>New Central Park W7 Street Lan <br/> France</li>
                             </ul>
                         </div>
-                    </div> */}
-                </div>
-            </div>
+                  </div> */}
+          </div>
         </div>
-        <div className="copyright__wrap -style-two">
-            <div className="container custom-container">
-                <div className="row align-items-center">
-                    {/* <div className="col-lg-6">
-                        <div className="copyright__text text-center text-lg-start">
-                            <p>Copyright © {new Date().getFullYear()} - All Rights Reserved By <span>Mykd</span></p>
-                        </div>
-                    </div> */}
-                </div>
+      </div>
+      <div className="copyright__wrap -style-two">
+        <div className="container custom-container">
+          <div className="row align-items-center">
+            <div
+              className="copyright__text text-center text-lg-center"
+              style={{
+                fontWeight: '600',
+                fontSize: '1.1em',
+              }}
+            >
+              Copyright © {new Date().getFullYear()}
+              &nbsp;
+              <Link href={'https://vocalify.ai/'}>Vocalify</Link>&nbsp;| All
+              Rights Reserved
             </div>
+          </div>
         </div>
+      </div>
     </footer>
   );
 };
