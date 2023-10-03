@@ -27,6 +27,7 @@ export default function Model({ showModel, setShowModel }: ModelProps) {
             // inset: '0px',
             top: '1%',
             left: '50%',
+            transform: 'translate(-50%)',
             fontSize: '1.3em',
             fontWeight: '700',
             color: '#FFBE18',
