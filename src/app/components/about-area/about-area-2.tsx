@@ -163,7 +163,7 @@ const AboutAreaTwo = () => {
               Marketing 15%
             </li>
             <li style={{ marginLeft: '20px', textAlign: 'justify' }}>
-              Locked up. Opens on 1st Jan 2024
+              Stagewise sale: 25% locked up. Opens 1st Jan 2024
             </li>
           </div>
           <div className="section__title text-start mt-60 mb-20">
