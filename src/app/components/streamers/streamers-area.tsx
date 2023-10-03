@@ -193,7 +193,7 @@ const StreamersArea = () => {
         </div> */}
       </div>
 
-      <Link href="/shop" className="tg-btn-3 tg-svg mx-auto">
+      <Link href="/marketplace" className="tg-btn-3 tg-svg mx-auto">
         <SvgIconCom icon={shape} id="svg-1" />
         <span>View All</span>
       </Link>

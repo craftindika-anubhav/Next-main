@@ -5,36 +5,35 @@ import shape from '@/assets/img/icons/shape.svg';
 import SvgIconCom from '../common/svg-icon-anim';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import { useRouter } from 'next/navigation';
+import './style.css';
 type ModelProps = {
   showModel: any;
   setShowModel: React.Dispatch<React.SetStateAction<any>>;
 };
 export default function Model({ showModel, setShowModel }: ModelProps) {
-  const router = useRouter();
   return (
     <Fragment>
       <div style={{ position: 'relative', width: '100%' }}>
         <Lightbox
           mainSrc={showModel.img.src}
-          imageTitle={`${showModel.title}`}
+          // imageTitle={'TBD'}
           onCloseRequest={() => setShowModel({})}
           enableZoom={false}
         />
-        <div
+        <span
           style={{
-            zIndex: '999999',
+            zIndex: '99999',
             position: 'fixed',
-            inset: '0px',
-            top: '5%',
-            left: '20px',
-            fontSize: '1.2em',
+            // inset: '0px',
+            top: '1%',
+            left: '50%',
+            fontSize: '1.3em',
             fontWeight: '700',
             color: '#FFBE18',
           }}
         >
           TBD
-        </div>
+        </span>
         <div
           style={{
             zIndex: '999999',
