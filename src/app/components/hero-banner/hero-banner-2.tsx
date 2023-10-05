@@ -14,8 +14,7 @@ const HeroBannerTwo = () => {
   const downloadFile = async () => {
     setDownloading(true);
     try {
-      // const url = `/VCF_WHITEPAPERS.pdf`;
-      const url = `https://vocalify.ai/whitepaper.pdf`;
+      const url = `/VCF_WHITEPAPERS.pdf`;
       if (typeof window !== 'undefined') {
         const response = await fetch(url);
         const blob = await response.blob();
