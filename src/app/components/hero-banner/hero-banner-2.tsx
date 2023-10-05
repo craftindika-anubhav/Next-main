@@ -63,7 +63,9 @@ const HeroBannerTwo = () => {
               >
                 <Link
                   href="#"
-                  onClick={downloadFile}
+                  onClick={() => {
+                    if (!downloading) downloadFile();
+                  }}
                   className="tg-btn-3 tg-svg mx-auto"
                 >
                   <SvgIconCom icon={shape} id="svg-1" />
