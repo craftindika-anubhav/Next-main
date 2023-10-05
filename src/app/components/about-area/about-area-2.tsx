@@ -119,7 +119,8 @@ const AboutAreaTwo = () => {
                                     </div>
                                  </div>
                               </div>
-                           </div> */}
+                        </div> 
+                    */}
                 </div>
               </div>
             </div>
